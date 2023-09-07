@@ -44,15 +44,15 @@ def get_info():
             "status_code": 200
         }
 
-        # Serialize the response with indentation
+        # Serialize the response with indentation and set content type
         json_response = json.dumps(response, indent=2)
         
         # Set the content type to 'application/json'
         return json_response, 200, {'Content-Type': 'application/json'}
-    except Exception as error_message:
-        # Handle errors and return an appropriate response
-        error_response = json.dumps({"error": str(error_message)})
-        return error_response, 400, {'Content-Type': 'application/json'}
+    except Exception as e:
+        # Handle errors gracefully and return an appropriate response
+        error_response = json.dumps({"error": str(e)}, indent=2)
+        return jsonify(error_response), 400
 
 if __name__ == '__main__':
     app.run()
