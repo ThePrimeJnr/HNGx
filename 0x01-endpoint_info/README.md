@@ -43,8 +43,8 @@ Follow these steps to set up and run the endpoint locally:
 1. Clone this repository to your local machine. 🖥️
 
    ```bash
-   git clone https://github.com/DestinedCodes/HNG_X.git
-   cd HNG_X/0x01-endpoint
+   git clone https://github.com/DestinedCodes/HNGx.git
+   cd HNGx/0x01-endpoint_info
    ```
 
 2. Install the required Python packages using pip. 💡
