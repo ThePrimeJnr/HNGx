@@ -18,12 +18,12 @@ To successfully complete this assignment, my endpoint had to meet these requirem
 Here's an example of the expected JSON response format:
 ```json
 {
-  "slack_name": "example_name",
+  "slack_name": "DestinedCodes"
   "current_day": "Monday",
   "utc_time": "2023-08-21T15:04:05Z",
   "track": "backend",
-  "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
-  "github_repo_url": "https://github.com/username/repo",
+  "github_file_url": "https://github.com/DestinedCodes/HNGx/blob/master/0x01-endpoint_info/endpoint.py",
+  "github_repo_url": "https://github.com/DestinedCodes/HNGx",
   "status_code": 200
 }
 ```
@@ -58,7 +58,7 @@ Follow these steps to set up and run the endpoint locally:
    Run the following command to start the endpoint using Gunicorn.
 
    ```bash
-   gunicorn endpoint:app
+   gunicorn endpoint_info:app
    ```
    This command tells Gunicorn to run the Flask app defined in the endpoint.py file.
 
@@ -73,7 +73,7 @@ I deployed my endpoint using Render, and it's now globally accessible! You can t
 Before the grand submission, I made sure that my endpoint met the acceptance criteria:
 
 - I ensured that my endpoint was publicly accessible. 🌍
-- Testing was my favorite part; I tested the endpoint using the provided URL or locally by running `gunicorn endpoint:app`. 🚀
+- Testing was my favorite part; I tested the endpoint using the provided URL or locally by running `gunicorn endpoint_info:app`. 🚀
 - I carefully checked the returned JSON against the defined format to ensure it included all the required fields. ✅
 - I validated the correctness of each data point in the JSON response. 📊
 
