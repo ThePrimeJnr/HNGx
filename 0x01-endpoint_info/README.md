@@ -67,7 +67,7 @@ Follow these steps to set up and run the endpoint locally:
 ## Deployment 🌐
 I deployed my endpoint using Render, and it's now globally accessible! You can test it by using the following enchanted URL, and of course, add your `slack_name` and `track` parameters to complete the magic:
 
-- [https://hng-x-endpoint.onrender.com/api?slack_name=your_name&track=your_track](https://hng-x-endpoint.onrender.com/api?slack_name=your_name&track=your_track)
+- [https://hngx-endpoint-info.onrender.com/api?slack_name=your_name&track=your_track](https://hngx-endpoint-info.onrender.com/api?slack_name=your_name&track=your_track)
 
 ## Testing 🧪
 Before the grand submission, I made sure that my endpoint met the acceptance criteria:
