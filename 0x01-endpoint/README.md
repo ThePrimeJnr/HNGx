@@ -1,6 +1,6 @@
-# HNG_X Backend Assignment Stage 1 🚀
+# HNGx Backend Assignment Stage 1 🚀
 
-Hello there! Welcome to my journey through the HNG_X Backend Assignment Stage 1. In this exciting task, I embarked on creating and hosting an endpoint that takes two GET request query parameters and returns specific information in the magical JSON format. So, let's dive into my adventure and discover how I set up and tested this amazing endpoint. 😃
+Hello there! Welcome to my journey through the HNGx Backend Assignment Stage 1. In this exciting task, I embarked on creating and hosting an endpoint that takes two GET request query parameters and returns specific information in the magical JSON format. So, let's dive into my adventure and discover how I set up and tested this amazing endpoint. 😃
 
 ## Requirements 📚
 To successfully complete this assignment, my endpoint had to meet these requirements:
@@ -44,7 +44,7 @@ Follow these steps to set up and run the endpoint locally:
 
    ```bash
    git clone https://github.com/DestinedCodes/HNG_X.git
-   cd HNG_X
+   cd HNG_X/0x01-endpoint
    ```
 
 2. Install the required Python packages using pip. 💡
@@ -90,4 +90,4 @@ My endpoint successfully met the following acceptance criteria:
 - The status code was `200`. ✅
 - The response adhered to the specified JSON format. 📋
 
-With this guide, I hope you'll embark on your own adventure and complete the HNG_X Backend Assignment Stage 1 successfully! 🚀✨
+With this guide, I hope you'll embark on your own adventure and complete the HNGx Backend Assignment Stage 1 successfully! 🚀✨
