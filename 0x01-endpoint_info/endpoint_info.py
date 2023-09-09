@@ -30,7 +30,7 @@ def get_info():
         utc_time = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
         # Use environment variables for URLs
-        github_file_url = "https://github.com/DestinedCodes/HNGx/blob/master/0X01-endpoint_info/README.md"
+        github_file_url = "https://github.com/DestinedCodes/HNGx/blob/master/0x01-endpoint_info/endpoint_info.py"
         github_repo_url = "https://github.com/DestinedCodes/HNGx"
 
         # Create the JSON response as a Python dictionary
