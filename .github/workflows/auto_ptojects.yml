@@ -1,24 +1,16 @@
-name: Move Issues in GitHub Projects
+name: Move assigned pull requests into To do
 
 on:
-  pull_request
+  issues:
+    types:
+      - assigned
 
 jobs:
   automate-project-columns:
     runs-on: ubuntu-latest
     steps:
-      - name: Move issue to "In Progress" when linked to a pull request
-        uses: actions/github-script@v6
+      - uses: alex-page/github-project-automation-plus@v0.8.3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const { data: issue } = await github.issues.get({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo
-            });
-            await github.projects.moveCard({
-              card_id: issue.project_card.id,
-              position: 'top',
-              column_id: '<ID_OF_IN_PROGRESS_COLUMN>'
-            });
+          project: Testing
+          column: Ready
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
