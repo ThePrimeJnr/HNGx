@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Use the action
-        uses: ./ # Uses an action in the root directory
+        uses: nearform-actions/github-action-check-linked-issues@v1
         id: check
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
