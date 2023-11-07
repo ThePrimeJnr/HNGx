@@ -21,4 +21,4 @@ jobs:
           exclude-branches: "release/**, dependabot/**"
       # Use the output from the `check` step
       - name: Get the output
-        run: echo "Has linked issues? ${{ steps.check.outputs.linked_issues_count }}"
+        run: echo "Has linked issues? ${{ steps.check.outputs.issues }}"
